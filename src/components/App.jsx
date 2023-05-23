@@ -86,6 +86,7 @@ export const App = () => {
       ) : (
         <ImageGallery images={images} openModal={openModal} />
       )}
+      {error && <p>something went wrong</p>}
 
       {loadMore && <Button onLoadMore={onLoadMore} page={page} />}
 
